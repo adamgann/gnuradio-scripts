@@ -16,7 +16,7 @@ grc_post=".xml"
 clear
 echo "Copy GNURadio Files"
 echo "This script has no protection for overwriting files."
-echo "Make sure you know what the hell you're doing."
+echo "Use at your own risk."
 echo -e "\nFirst run modtool in the destination directory"
 echo "Enter the source and destination directories without 'gr-'"
 echo -e "Enter the file prefix created using modtool\n"
@@ -56,8 +56,6 @@ dest_path="$path_base/gr-$dest_dir"
 source_dir_upper=${source_dir^^}
 dest_dir_upper=${dest_dir^^}
 
-echo "$dest_dir_upper"
-echo "$source_dir_upper"
 
 # Copy the three files over 
 cp "$source_path/lib/$file_pref$c_lib_post" "$dest_path/lib"
